@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="AWM.Controls.TestTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AWM.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="23" d:DesignWidth="300">
+    <Grid>
+        <TextBox x:Name="SimpleText" MaxLines="1" PreviewTextInput="OnPreviewTextInput" TextChanged="OnTextChanged" LostFocus="OnLostFocus" GotFocus="OnGotFocus" MouseDoubleClick="OnMouseDoubleClick" ></TextBox>
+    </Grid>
+</UserControl>
