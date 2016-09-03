@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SimpleWindow
 {
@@ -34,7 +23,7 @@ namespace SimpleWindow
             ID = id;
         }
 
-        // Contains a bunch of stuff, not show here
+        // Contains a bunch of stuff, not shown here
         public int ID { get; set; }
     }
 
@@ -55,11 +44,11 @@ namespace SimpleWindow
 
             textBox.DataContext = data;
 
-            List<SimpleWindow.Item> elements = new List<SimpleWindow.Item>();
-            elements.Add(new SimpleWindow.Item("one", 1));
-            elements.Add(new SimpleWindow.Item("two", 2));
-            elements.Add(new SimpleWindow.Item("three",3));
-            Asset asset = new SimpleWindow.Asset(1);
+            List<Item> elements = new List<Item>();
+            elements.Add(new Item("one", 1));
+            elements.Add(new Item("two", 2));
+            elements.Add(new Item("three",3));
+            Asset asset = new Asset(1);
 
             comboBox.ItemsSource = elements;
             comboBox.DisplayMemberPath = "Name";
