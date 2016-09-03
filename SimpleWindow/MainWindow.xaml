@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AWM.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="743.627">
     <Grid>
-        <local:TestTextBox HorizontalAlignment="Left" Margin="101,34,0,0" VerticalAlignment="Top" Width="276" Value="234" Max="20.5" Min="-20.6" />
-        <local:TestTextBox HorizontalAlignment="Left" Margin="101,57,0,0" VerticalAlignment="Top" Width="276" Value="234" />
+        <local:TestTextBox HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="144" Value="234" Max="20.5" Min="-20.6" />
+        <local:TestTextBox HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Width="144" Value="234" />
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,113,0,0" TextWrapping="Wrap" Text="{Binding Path=IntValue}" VerticalAlignment="Top" Width="144"/>
     </Grid>
 </Window>
